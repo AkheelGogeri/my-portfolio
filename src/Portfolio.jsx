@@ -137,24 +137,39 @@ const PROJECTS = [
 ];
 
 const EXPERIENCES = [
-  {
-    org: "NovaForge / AI Venture Lab (Vosyn)",
-    role: "Automation & Integration — Startup Program (Intern)",
+
+    {
+    org: "Accenture",
+    role: "AI Consultation (Trainee)",
     time: "2025",
     points: [
-      "Discovery session + hands-on integration tasks across internal tooling",
-      "Rapid prototyping mindset; shipped small features end-to-end",
+      "Supported AI solution discovery by translating business problems into clear ML or LLM use cases",
+      "Assisted with data understanding, defining success metrics, and outlining evaluation approaches",
+      "Built lightweight Python prototypes to validate feasibility and communicate tradeoffs",
+      "Prepared concise documentation and recommendations for stakeholder style reviews",
     ],
   },
-  {
-    org: "IIIT Dharwad — R&D",
-    role: "Project Assistant / Intern",
-    time: "2023–2024",
-    points: [
-      "Prototyped HRC/HRI simulation flows with ROS and Gazebo",
-      "Documented results; presented demos to the lab",
-    ],
-  },
+{
+  org: "IIIT Dharwad — R&D",
+  role: "Research Intern",
+  time: "Jan 2024 – May 2024",
+  points: [
+    "Worked on humanoid robot navigation tasks, supporting testing and iterative improvements in simulation and lab trials",
+    "Assisted with perception and control level debugging during navigation experiments",
+    "Prepared demo runs and shared progress updates with the research team",
+  ],
+},
+{
+  org: "IIIT Dharwad — R&D",
+  role: "Project Assistant",
+  time: "Aug 2024 – Nov 2024",
+  points: [
+    "Supported LLM focused research work through data collection, cleaning, and dataset preparation for experiments",
+    "Built a face detection module in Python and integrated it into a perception pipeline",
+    "Collaborated with research associates to connect the perception pipeline with a voice command robot workflow",
+    "Documented experiments, results, and integration steps for reproducibility and handovers",
+  ],
+},
 ];
 
 const EDUCATION = [
