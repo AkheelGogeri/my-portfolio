@@ -35,31 +35,39 @@ const PROJECTS = [
     { label: "Request collaboration", href: "mailto:akheelgogeri@gmail.com" }
     ],
   },
+
   {
-    slug: "hrc-ros-collab-robotics",
-    title: "Human–Robot Interaction with ROS",
-    year: "2024",
-    role: "Lead Engineer (HRI/HRC)",
-    problem: "Enable a collaborative robot to interact safely and intuitively with humans in shared workspaces.",
-    solution:
-      "Prototyped an HRC pipeline using ROS, Python, and sensor fusion to detect human presence, modulate robot speed, and trigger intent-aware responses.",
-    impact:
-      "Reduced near-collision events in simulation by ~60% and improved task completion consistency.",
-    tech: ["ROS", "Python", "Gazebo", "OpenCV"],
-    hero: "https://images.unsplash.com/photo-1581094651181-3592d6d1d8f7?q=80&w=1200&auto=format&fit=crop",
-    gallery: [
-      //"https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1400&auto=format&fit=crop",
-      //"https://images.unsplash.com/photo-1581091014534-16f8cbf8a3d0?q=80&w=1400&auto=format&fit=crop",
-    ],
-    bullets: [
-      "Designed intent-aware state machine for human proximity + gestures",
-      "Implemented dynamic speed scaling based on distance thresholds",
-      "Benchmarked pipelines across simulated tasks in Gazebo",
-    ],
-    links: [
-      { label: "Code (private demo)", href: "#" },
-    ],
-  },
+  slug: "humanoid-robot-navigation-iiitd",
+  title: "Humanoid Robot Navigation using ROS",
+  year: "2024",
+  org: "IIIT Dharwad — R&D",
+  role: "Research Intern",
+  problem:
+    "Enable a humanoid mobile robot to autonomously navigate indoor environments using sensor based perception, localization, and path planning.",
+  solution:
+    "Worked on integrating and testing the ROS navigation stack for a humanoid robot, using LiDAR based mapping, localization, and global and local path planning in both simulation and controlled physical setups.",
+  impact:
+    "Developed a strong understanding of ROS based autonomous navigation pipelines, including SLAM, costmaps, and planner configuration, through extensive simulation and demo based validation.",
+  tech: ["ROS", "Ubuntu", "Gazebo", "RViz", "LiDAR"],
+  bullets: [
+    "Set up ROS environment on Intel NUC and configured core navigation packages",
+    "Integrated RP LiDAR for environment perception and mapping",
+    "Built and tested URDF models for robot visualization in RViz and Gazebo",
+    "Worked with SLAM approaches such as gmapping and Hector SLAM for map generation",
+    "Configured global and local planners using Dijkstra based global planning and DWA for obstacle avoidance",
+    "Validated navigation behavior through teleoperation, goal based navigation, and simulation demos",
+  ],
+  architecture: {
+  img: "F:\Portfolio\my-portfolio\public\internship\Architecture_diagram.jpg",
+  caption: "System architecture showing sensing, compute, and actuation integrated via ROS.",
+},
+sequence: {
+  img: "F:\\Portfolio\\my-portfolio\\public\\internship\\Sequence_diag.jpg",
+  caption: "Runtime flow from operator command to perception, planning, and motor control.",
+},
+
+},
+
   {
     slug: "flask-opencv-person-detection",
     title: "Real‑Time Person Detection Web App",
@@ -138,17 +146,18 @@ const PROJECTS = [
 
 const EXPERIENCES = [
 
-    {
-    org: "Accenture",
-    role: "AI Consultation (Trainee)",
-    time: "2025",
-    points: [
-      "Supported AI solution discovery by translating business problems into clear ML or LLM use cases",
-      "Assisted with data understanding, defining success metrics, and outlining evaluation approaches",
-      "Built lightweight Python prototypes to validate feasibility and communicate tradeoffs",
-      "Prepared concise documentation and recommendations for stakeholder style reviews",
-    ],
-  },
+{
+  org: "Accenture",
+  role: "AI Consultation Trainee (Micro Internship)",
+  time: "2024",
+  points: [
+    "Learned AI assisted consulting approaches for structured problem solving in business scenarios",
+    "Applied Root Cause Analysis techniques such as Fishbone diagrams and the 5 Whys method to analyze problems",
+    "Used AI tools to support hypothesis generation, issue breakdown, and solution exploration",
+    "Practiced converting ambiguous business problems into clearly structured problem statements",
+    "Developed basic consulting skills including logical thinking, stakeholder focused communication, and recommendation framing",
+  ],
+},
 {
   org: "IIIT Dharwad — R&D",
   role: "Research Intern",
@@ -188,8 +197,7 @@ const EDUCATION = [
 const LINKS = {
   github: "https://github.com/akheel-gogeri",
   linkedin: "https://www.linkedin.com/in/akheel-gogeri",
-  email: "mailto:akheel@example.com",
-  website: "https://your-domain.com",
+  email: "mailto:akheelgogeri@gmail.com",
 };
 
 // --------------------------- UI PRIMITIVES -----------------------------------
@@ -430,9 +438,6 @@ const Contact = () => (
             </a>
             <a href={LINKS.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-3 rounded-2xl border">
               <Github size={18} /> GitHub
-            </a>
-            <a href={LINKS.website} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-3 rounded-2xl border">
-              <Globe size={18} /> Website
             </a>
           </div>
         </div>
