@@ -190,7 +190,7 @@ const EDUCATION = [
   {
     school: "KLE Technological University",
     prog: "B.E. Automation & Robotics",
-    time: "2019–2024",
+    time: "2021–2024",
   },
 ];
 
