@@ -184,7 +184,7 @@ const EXPERIENCES = [
 const EDUCATION = [
   {
     school: "University of Liverpool",
-    prog: "MSc Advanced Computer Science (AI & Data Science)",
+    prog: "MSc AI & Data Science",
     time: "2025–2026",
   },
   {
